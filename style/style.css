@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif ;
+}
+
+.h1_type1{
+    margin-left: 350px;
+    font-size: 70px;
+}
+  
+/*Header*/
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 0 2rem;
+    background: #ffffff;
+}
+
+.nav{
+    list-style: none;
+}
+
+.nav_a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;  
+}
+
+.nav_a:hover{
+    color: #A9927D;
+}
+
+.btn_type1{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    background-color: #aaaaaa;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.btn_type1:hover{
+    color: #ffffff;
+    scale: 1.05;
+}
+
+.btn_type1:active{
+    scale: 0.95;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+/*end*/
+
+/*Home Image Changer*/
+.Home_top{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(/images/hotel_images/the-kingsbury-hotel\ -\ 1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 30s infinite ease-in-out;
+}
+
+.content{
+    background-color: #aaaaaa99;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+}
+
+.content h1{
+    color: #000000;
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+
+.content h1 span{
+    color: #ffffff;
+}
+
+.content a{
+    background: #000000;
+    color: #aaaaaa;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 35px;
+    border-radius: 25px;
+}
+
+.content a:hover{
+    background: #aaaaaa;
+    color: #000000;
+}
+
+
+@keyframes change{
+    0%
+    {
+        background-image: url(/images/hotel_images_top/134394306.jpg);
+    }
+    20%
+    {
+        background-image: url(/images/hotel_images/Bilin\ tree\ hotel\ 1.jpg);
+    }
+    40%
+    {
+        background-image: url(/images/hotel_images_top/queens_hotel.jpg);
+    }
+    60%
+    {
+        background-image: url(/images/hotel_images_top/colombo_2.jpg);
+    }
+    80%
+    {
+        background-image: url(/images/hotel_images_top/gallery12.jpg);
+    }
+    100%
+    {
+        background-image: url(/images/hotel_images/88\ ella\ 1.jpg);
+    }
+
+}
+/*end*/
+
+/*Availability Checker*/
+.availability form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: #eae9e9;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.availability form .box{
+    flex: 1 1 20rem;
+}
+
+.availability form .box p{
+    font-size: 2rem;
+    color:#000000;
+}
+
+.availability form .box .availability_input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color:#000000;
+    margin: 1rem 0;
+    border-radius: .5rem;
+}
+/*end*/
+
+/*Hotel Brands*/
+.Hotel_Brands .brand_container{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    gap: 2rem;
+}
+
+.Hotel_Brands .brand_container .brand_box img{
+    height: 10rem;
+    margin-bottom: 0.7rem;
+}
+/*end*/
+
+

@@ -14,6 +14,12 @@
     color: #000000;
 }
 
+@media screen and (max-width:1500px) {
+    .review h1{
+        margin-left: 100px;
+    }
+}
+
 .slide_row{
     display: flex;
     width: 3200px;

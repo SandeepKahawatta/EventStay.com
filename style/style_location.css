@@ -56,3 +56,19 @@
     padding-bottom: 13px;
     border-radius: 30px;
 }
+
+@media screen  and (max-width:420px) {
+    .location_container{
+        margin: 40px 20px 0px 20px;
+    }
+
+    .location_container .box {
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .location_container .box .location h2 {
+        font-size: 30px;
+    }
+}

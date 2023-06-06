@@ -10,6 +10,12 @@ body{
     margin-left: 350px;
     font-size: 70px;
 }
+
+@media screen and (max-width:1500px){
+    .h1_type1{
+        margin-left: 100px;
+    }
+}
   
 /*Header*/
 header{
@@ -191,6 +197,33 @@ header{
 .Hotel_Brands .brand_container .brand_box img{
     height: 10rem;
     margin-bottom: 0.7rem;
+}
+
+@media screen and (max-width:1500px) {
+    .Hotel_Brands .brand_container {
+        grid-template-columns: repeat(auto-fit, minmax(1fr));
+        gap: 1rem;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .Hotel_Brands .brand_container .brand_box img{
+        height: 8rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen  and (max-width:555px) {
+    .Hotel_Brands .brand_container {
+        padding-top: 30px;
+        grid-template-columns: repeat(auto-fit, minmax( 1fr));
+        gap: 0.5rem;
+    }
+
+    .Hotel_Brands .brand_container .brand_box img {
+        height: 6rem;
+        margin-bottom: 0.3rem;
+    }
 }
 /*end*/
 
